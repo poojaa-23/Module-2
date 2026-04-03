@@ -1,50 +1,25 @@
-# 🔺 Looping(Patterns)-Pascal's Triangle Generator in Python
-
-This project demonstrates a simple Python program to generate **Pascal’s Triangle**, where the number of rows is provided by the user.
-
----
+# Lambda Function in Python: Addition of Two Numbers
 
 ## 🎯 Aim
-
-To write a Python program that generates **Pascal's Triangle** using numbers. The number of rows is accepted from the user.
-
----
+To write a Python program that defines a **lambda function** which takes two arguments `a` and `b`, and returns their sum.
 
 ## 🧠 Algorithm
+1. Get two integer inputs from the user.
+2. Use a **lambda function** to define a function `f` that returns `a + b`.
+3. Call the function with the user inputs and print the result.
 
-1. Start the program.
-2. Input the number of rows from the user.
-3. Loop from 0 to the number of rows.
-4. For each row:
-   - Print appropriate spaces to shape the triangle.
-   - Compute values using the formula:  
-     \[
-     C(n, k) = \frac{n!}{k!(n-k)!}
-     \]
-5. Print all rows of Pascal’s Triangle.
-6. End the program.
-
----
-
-## 🧪 Program
+## 🧾 Program
 ```
-rows = int(input())
-coef = 1
-
-for i in range(1, rows+1):
-    for space in range(1, rows-i+1):
-        print(" ",end="")
-    for j in range(0, i):
-        if j==0 or i==0:
-            coef = 1
-        else:
-            coef = coef * (i - j)//j
-        print(coef, end = " ")
-    print()
+i=int(input())
+j=int(input())
+z=int(input())
+f = lambda a, b,c: a+b+c
+print(f(i, j,z))
 ```
-## Sample Output
 
-<img width="611" height="683" alt="517996248-1feb811d-de3b-4e61-94cb-7c4a290c8cdd" src="https://github.com/user-attachments/assets/2a7d101e-5592-42e6-9976-a5ab1fc9003b" />
+## Output
+
+<img width="617" height="452" alt="517995636-ad852486-5926-4eec-92fc-5be70a4b0910" src="https://github.com/user-attachments/assets/bce20250-dae0-4ce0-a245-d88e651acfc7" />
 
 ## Result
 Thus,the Python program that defines a lambda function which takes two arguments a , b and c, and returns their sum is created successfully.
